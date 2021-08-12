@@ -21,6 +21,11 @@ pipeline {
                 echo 'Run unit tests from the source code' 
             }
         }
+        stage('Testing Jenkins Change') {
+            steps {
+                echo 'Changes added by Varun Patkar' 
+            }
+        }
         stage('Run Integration Tests') {
             steps {
                 echo 'Run only crucial integration tests from the source code' 
